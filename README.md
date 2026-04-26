@@ -1,11 +1,7 @@
 # Smart Thermostat and Morse Code Projects
 
 ## Overview
-This portfolio entry includes two projects from my embedded systems course that demonstrate how I worked with hardware and software together using a Raspberry Pi.
-
-The first project is a smart thermostat prototype that reads temperature data, allows user input through buttons, and controls output using LEDs, an LCD display, and UART communication. The second project is a Morse code system that uses a state machine to control LED signaling in a structured way.
-
-Together, these projects show how I approached system design, hardware interaction, and state-based logic.
+This portfolio entry includes two projects from my embedded systems course that demonstrate my ability to work with both hardware and software. The main project is a smart thermostat built using a Raspberry Pi, and the second artifact is a Morse code system that uses a state machine to control LED output. These projects show how I approached system design, hardware interaction, and structured logic.
 
 ---
 
@@ -13,32 +9,38 @@ Together, these projects show how I approached system design, hardware interacti
 
 ### Smart Thermostat
 - Reads temperature using an I2C sensor  
-- Allows user input to adjust a temperature set point  
-- Uses LEDs to indicate heating and cooling states  
-- Displays system information on an LCD  
-- Sends system data over UART  
+- Uses buttons to adjust a temperature set point  
+- Controls heating and cooling indicators using LEDs  
+- Displays system data on an LCD  
+- Sends data over UART to simulate communication with a server  
 
 ### Morse Code System
 - Converts input into Morse code signals  
 - Uses a state machine to control LED behavior  
 - Manages timing for dots, dashes, and pauses  
-- Demonstrates structured control flow in an embedded system  
+- Demonstrates structured control flow  
 
 ---
 
 ## Reflection
 
-This project focused on building a working smart thermostat prototype using a Raspberry Pi and several hardware components. The goal was to read temperature data from a sensor, allow the user to adjust a set temperature using buttons, and respond by controlling heating or cooling through LEDs. The system also displayed information on an LCD and sent data over UART to simulate communication with a larger system. Along with the final thermostat, I included my Morse code project because it highlights how I used a state machine to control behavior in a structured and predictable way.
+### Summarize the project and what problem it was solving
+The main project was a smart thermostat prototype that simulates how a real system would monitor and control temperature. It reads temperature data, allows the user to adjust a set point, and responds by turning heating or cooling on or off using LEDs. It also displays information on an LCD and sends data through UART to simulate communication with a larger system. The Morse code project focused on solving a different problem by translating input into timed LED signals using a state machine, which helped build a strong foundation for managing system behavior.
 
-One thing I feel I did well in this project was breaking the system down into smaller parts and getting each piece working before putting everything together. For example, I tested the buttons, LEDs, and sensor individually before integrating them into the full thermostat logic. The Morse code project helped with this approach because it required me to think through each state and transition ahead of time, and that carried over into the thermostat design.
+### What did you do particularly well
+One thing I did well was breaking the system into smaller parts and testing each one before combining everything. I made sure the buttons, LEDs, and sensor were all working individually before integrating them into the thermostat. I also had a good understanding of how to use a state machine, which helped in both the Morse code project and the thermostat when handling different system states.
 
-If I were to improve anything, I would spend more time organizing the code earlier in the process. As the project grew, it became more important to keep things clean and structured, especially with multiple inputs and outputs happening at the same time. I would also look into improving efficiency, such as reducing unnecessary updates or refining how often data is sent over UART. The Morse code project also showed me that timing could be improved to make output more consistent.
+### Where could you improve
+I could improve by organizing my code earlier in the process. As the project became more complex, it became more important to keep everything structured and easy to follow. I would also improve efficiency by reducing unnecessary updates and refining how often data is sent over UART. In the Morse code project, I could improve the timing to make the output more consistent.
 
-Throughout this course, I added several tools and resources to my support network. I relied on the lab guides for structure, but I also used documentation for libraries like GPIOZero and other examples to better understand how to manage hardware interactions. I also became more comfortable troubleshooting hardware issues by checking wiring, verifying connections, and testing components individually.
+### What tools and/or resources are you adding to your support network
+I added several resources to my support network during this course. I used the lab guides as a starting point, but I also relied on documentation for libraries like GPIOZero and online examples to better understand how to work with hardware. I also gained more experience troubleshooting hardware issues by checking wiring, verifying connections, and testing components step by step.
 
-The skills from this project are very transferable to other work, especially anything involving embedded systems. I learned how to read sensor data, respond to user input, and control outputs based on logic. The use of a state machine in both the Morse code project and the thermostat is especially useful because it provides a clear way to manage system behavior based on different conditions.
+### What skills from this project will be particularly transferable to other projects and/or course work
+The skills from this project are very transferable, especially for embedded systems and hardware-based applications. I learned how to read sensor data, respond to user input, and control outputs based on logic. The use of a state machine is especially important because it provides a clear way to manage system behavior. These skills can be applied to many different types of systems beyond this project.
 
-To keep the project maintainable and readable, I followed a consistent structure and used comments to explain what each part of the code was doing. I grouped related functionality together, such as handling inputs, updating outputs, and managing system state. This made it easier to understand the code later and make changes without breaking other parts of the system.
+### How did you make this project maintainable, readable, and adaptable
+I kept the project maintainable and readable by using a consistent structure and adding comments to explain each part of the code. I grouped related functionality together, such as input handling, output control, and state management. This made it easier to understand the code later and make changes without affecting other parts of the system.
 
 ---
 
